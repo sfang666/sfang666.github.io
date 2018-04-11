@@ -1,2 +1,3 @@
-# Exclude OS X folder attributes
-.DS_Store
+
+# shulei-3870
+ Portfolio site for 3870 web authoring Spring 2018
