@@ -39,6 +39,38 @@ if (i<10)
 </script>
 </head>
 
+<script src="../zurb/js/vendor/modernizr.js"></script>
+<style>
+.testdiv {
+text-align: center;
+font-szie: 18px;
+width: 200px;
+margin: 10px;
+}
+.testImg {
+width: 300px;
+height: 300px;
+border-radius: 20px;
+overflow: hidden;
+transition: border-radius 0.5s;
+-webkit-transition: border-radius 0.5s;
+text-align: center;
+font-szie: 18px;
+}
+.testImg:hover {
+border-radius: 50%;
+}
+
+.breadcrumbs{
+background-color:#fff;
+border:0px;
+display:inline-block;
+
+}
+
+</style>
+</head>
+
 <body onload="startTime()">
 <div id="txt"></div>
 
@@ -51,9 +83,17 @@ if (i<10)
             <h6 class="text-center">"Welcome to the world in my eyes."</h6>
 		</div>
     </div>
-    <div class="row ">
-    	<div class="longerDiv"></div>
-    </div>
+<div class = "longerDiv"></div>
+
+		    <nav aria-label="You are here:" role="navigation" style="width:100%;text-align:center; ">
+		       <ul class="breadcrumbs">
+		        <li><a href="index.html">Home</a></li>
+						<li><a href="victoria.html">Victoria</a></li>
+		        <li><a href="duskwood.html">Duskwood</a></li>
+		        <li><a href="about.html">About</a></li>
+		      </ul>
+		    </nav>
+		</div>
 
     <div class="row" style="height:80%">
 
