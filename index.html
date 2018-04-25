@@ -37,32 +37,13 @@
 			}
 
 		</style>
-		<script>
-			function startTime()
-			{
-			var today=new Date()
-			var h=today.getHours()
-			var m=today.getMinutes()
-			var s=today.getSeconds()
-			// add a zero in front of numbers<10
-			m=checkTime(m)
-			s=checkTime(s)
-			document.getElementById('txt').innerHTML=h+":"+m+":"+s
-			t=setTimeout('startTime()',500)
-			}
 
-			function checkTime(i)
-			{
-			if (i<10)
-			  {i="0" + i}
-			  return i
-			}
-		</script>
 		<script src="../zurb/js/vendor/modernizr.js"></script>
 
 	</head>
-	<body onload="startTime()">
+	<body>
 		<div id="txt"></div>
+		<p id="today"></p>
 		<article class="page-content" style="height:100%">
 			<div class="row">
 		    <div class="medium-9 medium-centered columns">
@@ -86,13 +67,13 @@
 
 		    <div class="row" style="height:80%">
 
-		          <div class = "medium-5  columns container-hover flex-align-center" id="leftImage">
+		          <div class ="medium-5  columns container-hover flex-align-center" id="leftImage">
 		            <a href="victoria.html">
 		                <p>volume I</p>
 		                <h2>VICTORIA</h2>
 		            </a>
 		          </div>
-		          <div class = "medium-5 columns container-hover flex-align-center" id="rightImage">
+		          <div class ="medium-5 columns container-hover flex-align-center" id="rightImage">
 		            <a href="duskwood.html">
 		                <p>volume II</p>
 		                <h2>DUSKWOOD</h2>
@@ -112,5 +93,6 @@
 
 		    </div>
 		</div>
+		<script src="js/datetime.js"></script>
 	</body>
 </html>
