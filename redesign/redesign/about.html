@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jamie">
+    <title>SunflowerII</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Dosis:400,500,600" rel="stylesheet">
+    <!-- ////NEED FOR ZURB-Edit FILEPATHS AS NEEDED//// -->
+    <link rel="stylesheet" href="zurb/css/foundation.css">
+    <link rel="stylesheet" href="zurb/css/app.css">
+    <!-- ////NEED FOR ZURB-Edit FILEPATHS AS NEEDED//// -->
+    <link href="css/homestyles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+    <section class="grid-x grid-margin-x">
+      <div class="cell medium-4 small-4 large-5">
+        <a href="index.html">
+        <img src="img/sunflowerlogo.png" alt="logo" width="150" style="float:right">
+      </a>
+      </div>
+      <div class="cell medium-8 small-8 large-7">
+        <a href="index.html">
+        <img src="img/title2.png" alt="logo" width="500">
+      </a>
+      </div>
+    </section>
+    </header>
+        <nav class="topnav" id="myTopnav">
+          <ul>
+            <li>
+              <a href="index.html" class="button">Home</a>
+              <a href="menu.html" class="button">Menu</a>
+              <a href="gallery.html" class="button">Gallery</a>
+              <a href="about.html" class="current button">About</a>
+            </li>
+        </ul>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <div style="padding-left:16px">
+        </div>
+        </nav>
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        </script>
+<main class="grid-container">
+        <section class="grid-x">
+          <aside class="large-3 cell large-offset">
+            <h2>Hours</h2>
+            <h3>Mon-Sat</h3>
+            <p>11:30am-3:00pm<br>
+              4:30pm-8:30pm</p>
+              <h3>Sun</h3>
+              <p>Closed</p>
+              <h3 id="today"></h3>
+          </aside>
+          <article class="large-3 cell large-offset-1">
+            <iframe class="g-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12631.3819829762!2d-122.0799644!3d37.6763381!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc571e0fa5b7466a!2sSunflower+2!5e0!3m2!1sen!2sua!4v1504612925616" width="600" height="450" frameborder="0" style="border:0; width:101%; height:100%;" allowfullscreen></iframe>
+          </article>
+          <aside class="large-3 cell large-offset-1">
+            <h2>Phone Number</h2>
+            <p>+1 510-537-0786<br>
+              We Offer Catering!</p>
+            <h2>Location</h2>
+            <p>1213 A St Hayward CA 94541</p><br>
+            <p>27 years in Castro Valley, now in Hayward also!</p>
+          </aside>
+        </section>
+    </main>
+    <!-- ////NEED FOR ZURB-Edit FILEPATHS AS NEEDED//// -->
+    <script src="zurb/js/vendor/jquery.js"></script>
+    <script src="zurb/js/vendor/what-input.js"></script>
+    <script src="zurb/js/vendor/foundation.js"></script>
+    <script src="zurb/js/app.js"></script>
+    <script src="js/date.js"></script>
+    <!-- ////NEED FOR ZURB-Edit FILEPATHS AS NEEDED//// -->
+  </body>
+</html>
