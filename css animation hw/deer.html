@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sprite Animation</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/deer.css">
+  </head>
+  <style>
+  .move
+  {
+  position:relative;
+  animation:mymove 5s infinite;
+  animation-delay:2s;
+
+  /*Safari and Chrome*/
+  -webkit-animation:mymove 5s infinite;
+  -webkit-animation-delay:2s;
+  }
+
+  @keyframes mymove
+  {
+  from {left:0px;}
+  to {left:500px;}
+  }
+
+  @-webkit-keyframes mymove /*Safari and Chrome*/
+  {
+  from {left:0px;}
+  to {left:500px;}
+  }
+  </style>
+  </head>
+
+  <body>
+    <div class="dropdown">
+      <button class="dropbtn">M</button>
+      <div class="dropdown-content">
+        <a href="index.html">Time</a>
+        <a href="sunrain.html">Sun&Rain</a>
+        <a href="heart.html">Love</a>
+        <a href="deer.html">Run</a>
+      </div>
+    </div>
+    <div id="runner"></div>
+      <div id="road"></div>
+      <div class="center">
+      <div class="move">No one told you when to run，you missed the starting gun.</div>
+  </body>
+</html>
