@@ -294,9 +294,31 @@ background:url("http://lostworldsfairs.com/atlantis/img/bg_backwave.png");
 
   height:102px;
   width: 278px;
-  top: 9900px;
+  top: 8900px;
   left:800px;
   position: absolute;
   z-index:10;
-  display:none;
+  animation: moveairp 10s linear infinite;
+}
+@keyframes moveairp{
+  20%{
+	  top:9000px;
+	  left:700px
+	 }
+  40%{
+	  top:9200px;
+	  left:550px
+   }
+  60%{
+	  top:9400px;
+	  left:400px
+  }
+  80%{
+	  top:9600px;
+	  left:250px
+  }
+  100%{
+	  top:9800px;
+	  left:100px
+  }
 }
