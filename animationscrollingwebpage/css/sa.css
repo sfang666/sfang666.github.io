@@ -1,0 +1,302 @@
+body{
+  /*background-color: linear-gradient(to bottom, #b7e6f7 0%,#baffc6 100px,#bfe8f9 100px,#91e0e0 100%);*/
+  background: 1px 80px repeat-x ,
+    linear-gradient(to bottom, #84d8f9 0%,#9fd8ef 16%,#c0f9c3 31%,#c0f9c3 51%,#a4e9fc 85%,#ccf0f9 95%);
+  z-index: 0;
+
+}
+/*background*/
+#stage{
+  height: 10000px;
+  width: 1200px;
+  margin:0 auto;
+  border:3px solid grey;
+  position: relative;
+  /*z-index: 4;
+  background:url("http://bpic.588ku.com/back_pic/04/93/44/01591b0898616db.jpg") 1px 1px no-repeat,linear-gradient(to bottom, #b7e6f7 0%,#baffc6 100px,#bfe8f9 100px,#91e0e0 100%);
+  */
+  background:url("http://bpic.588ku.com/back_pic/04/93/44/01591b0898616db.jpg") no-repeat;
+}
+/*animation cloudy*/
+#cloudy{
+  background-image:url('../img/2bgclouds.png');
+  background-repeat:repeat-x;
+  height: 190px;
+  width: 100%;
+  top:500px;
+  position: absolute;
+  z-index: 20;
+  animation: moveclouds 5s linear infinite;
+}
+
+@keyframes moveclouds{
+  from{background-position: 0% 0%}
+  to{background-position: 205% 0%}
+}
+
+#dong{
+  background-image: url('../img/rock.png');
+  position: fixed;
+  height: 200px;
+  width:300px;
+  margin-left: 500px;
+  z-index: 6;
+}
+
+#home{
+  background-image:url('../img/gz2.png');
+  height: 900px;
+  width: 100%;
+  top:600px;
+  position: absolute;
+
+}
+
+#guangzhou{
+	position: absolute;
+	top:900px;
+	display:none;
+	animation: moveguangzhou 5s linear infinite;
+	}
+
+
+
+#family{
+  background-image:url('../img/f3.png');
+
+  height: 260px;
+  width: 260px;
+  top:1300px;
+  position: absolute;
+  z-index: 6;
+  display:block;
+}
+#airp{
+  background-image:url('../img/airpr.svg');
+
+  height:1000px;
+  width: 100%;
+  top: 1200px;
+  position: absolute;
+}
+#ocean{
+background:url("http://lostworldsfairs.com/atlantis/img/bg_backwave.png");
+
+  height:10px;
+  width: 2000px;
+  top: 1700px;
+  position: absolute;
+}
+#arrive{
+  background-image:url('../img/me.svg');
+  height:400px;
+  width: 600px;
+  top: 2100px;
+  position: absolute;
+}
+
+#sfo{
+    background-image: url('../img/sfo.jpg');
+    height:300px;
+    width:100%;
+    top: 1900px;
+    position: absolute;
+}
+#photo{
+height:514px;
+width: 514px;
+top: 2700px;
+position: absolute;
+z-index:100;
+}
+
+#road{
+    background-image: url('../img/road.png');
+    height:600px;
+    width: 100%;
+    top:3200px;
+    position: absolute;
+}
+#car{
+  background-image: url('../img/car.png');
+  height:260px;
+  width: 260px;
+  top:3560px;
+  position: absolute;
+  animation: movecar 5s linear infinite;
+}
+@keyframes movecar{
+	0%{
+		top:3560px;
+		left:0;
+		}
+	10%{
+		top:3560px;
+		left:100px;
+		}
+  20%{
+	  top:3500px;
+	  left:200px
+	 }
+  40%{
+	  top:3450px;
+	  left:400px
+   }
+  60%{
+	  top:3400px;
+	  left:600px
+  }
+  80%{
+	  top:3350px;
+	  left:800px
+  }
+  100%{
+	  top:3300px;
+	  left:950px
+  }
+}
+
+#ocean{
+background:url("http://lostworldsfairs.com/atlantis/img/bg_backwave.png");
+
+  height:10px;
+  width: 100%;
+  top: 4000px;
+  position: absolute;
+}
+#airp{
+  background:url('../img/airpr.png') no-repeat;
+
+  height:102px;
+  width: 278px;
+  top: 1700px;
+  left:800px;
+  position: absolute;
+  z-index:10;
+  animation: moveairp 5s linear infinite;
+}
+@keyframes moveairp{
+  20%{
+	  top:1800px;
+	  left:700px
+	 }
+  40%{
+	  top:1900px;
+	  left:550px
+   }
+  60%{
+	  top:2000px;
+	  left:400px
+  }
+  80%{
+	  top:2100px;
+	  left:250px
+  }
+  100%{
+	  top:2100px;
+	  left:100px
+  }
+}
+
+#study{
+  background-image: url('../img/study.svg'); /*and add school img*/
+  height:200px;
+  width: 300px;
+  top: 4200px;
+  position: absolute;
+}
+#school {
+  background: url('../img/school.jpg');
+  height: 200px;
+  width: 200px;
+  top: 4500px;
+  position:absolute;
+}
+#cooking {
+  background: url('../img/cook.svg');
+  height: 300px;
+  width: 400px;
+  top: 4500px;
+  left:250px;
+  position:absolute;
+}
+
+#school {
+  background: url('../img/school.jpg');
+  height: 200px;
+  width: 250px;
+  top: 4900px;
+  right:300px;
+  position:absolute;
+}
+#play {
+  background: url('../img/goout.jpg');
+  height: 750px;
+  width: 100%;
+  top: 5400px;
+  position:absolute;
+  display:none;
+}
+#car2{
+  background: url('../img/car.png');
+  height: 260px;
+  width: 260px;
+  top: 6000px;
+  position:absolute;
+  left:500px;
+  display:none;
+
+}
+#city{
+  background: url('../img/city.jpg');
+  height:  1024px;
+  width: 800px;
+  top: 9000px;
+  position:absolute;
+}
+/*  background-image:url('../img/airpr.svg');
+
+  height:1000px;
+  width: 100%;
+  top: 7000px;
+  position: absolute;
+}
+#ocean{
+background:url("http://lostworldsfairs.com/atlantis/img/bg_backwave.png");
+
+  height:10px;
+  width: 2000px;
+  top: 7200px;
+  position: absolute;
+}*/
+/*part 2
+#stage2{
+  background: linear-gradient(to bottom, #b7e6f7 0%,#baffc6 25%,#bfe8f9 50%,#91e0e0 100%);
+  height: 1000px;
+  width: 2000px;
+  position: relative;
+  z-index: 7;
+}*/
+#submarine{
+  height:50px;
+  width:100px;
+
+  margin-left:-100px;/*margin:0 auto;*/
+  line-height:50px;
+  text-align:center;
+  position:absolute;/*absolute, relative*/
+  top:0px;/*box text*/
+  left:0%;/*box text*/
+
+}
+#airp2{
+  background:url('../img/airpr.png') no-repeat;
+
+  height:102px;
+  width: 278px;
+  top: 9900px;
+  left:800px;
+  position: absolute;
+  z-index:10;
+  display:none;
+}
