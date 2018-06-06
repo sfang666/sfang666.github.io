@@ -294,12 +294,13 @@ background:url("http://lostworldsfairs.com/atlantis/img/bg_backwave.png");
 
   height:102px;
   width: 278px;
-  top: 9900px;
+  top: 8900px;
   left:800px;
   position: absolute;
   z-index:10;
   display:none;
-}*#airp2{
+}
+/*#airp2{
 -  background:url('../img/airpr.png') no-repeat;
 -
 -  height:102px;
